@@ -1,0 +1,226 @@
+/* GOLBAL */
+*{
+    /* giup cho khi them float ko bi rot hang */
+    box-sizing: border-box;
+}
+
+.html, .body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both;
+}
+
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 16px;
+}
+
+.line{
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+/* HEADER */
+.header__logo{
+    float: left;
+}
+
+.header__slogan{
+    float: right;
+    margin-right: 100px;
+}
+
+.header__navbar ul{
+    list-style: none;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header__navbar ul li{
+    display: inline;
+}
+
+.header__navbar ul a{
+    text-decoration: none;
+    font-size: 1.13vw;
+    padding: 0 0.3em;
+    /* vw, vh: lm cho nhung cai man hinh nho */
+    color: #636363;
+    font-weight: bold;
+}
+
+.header__navbar ul li:hover{
+    border-bottom: 2px solid #b31c25;
+}
+.header__navbar .active{
+    border-bottom: 2px solid #b31c25
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/slider_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin-top: 20px;
+}
+/* INTRO */
+.intro p{
+    text-align: center;
+    margin: 0;
+    color: #636363;
+    line-height: 25px;
+    padding: 0 20px;
+}
+/* PROGRAM */
+.program__item h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #b31c25;
+    letter-spacing: -1px;
+    margin: 10px 0;
+}
+
+.program__item{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.program__item img{
+    width: 100%;
+}
+
+.program__item p{
+    margin: 0;
+    color: #636363;
+}
+/* NEWS */
+.news{
+    margin-bottom: 20px;
+}
+.news__left, .news__right{
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.news__text img{
+    width: 100%;
+    display: block;
+}
+
+.news__text{
+    position: relative;
+}
+
+.news__text p{
+    /* padding ko thể tác động vào position absolute nên là sẽ có div trung gian là smallitem */
+    position: absolute;
+    bottom: 8px;
+    left: 0; 
+    color: white;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.news__left .news__text{
+    font-size: 24PX;
+}
+
+.news_small-item{
+    float: left;
+    width: 50%;
+    padding: 0 8.5px 10px;
+}
+
+.news__text hr{
+    margin: 0;
+    height: 5px;
+    background-color: #b31c25;
+    margin-top: 3px;
+}
+/* FOOTER */
+.footer{
+    background-color: #b31c25;
+    padding: 20px 50px;
+}
+
+.footer .info{
+    float: right;
+    width: 50%;
+    color: white;
+} 
+
+.info .d2{
+    text-transform: capitalize;
+}
+
+.info p{
+    margin: 0;
+    line-height: 20px;
+    word-spacing: 2px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* ex */
+.ex__left, .ex__right{
+    float: left;
+    width: 50%;
+}
+
+.ex__text img{
+    width: 100%;
+}
+
+.ex__smallitem{
+    float: left;
+    width: 50%;
+    padding: 0 8.5px 10px;
+}
+
+.ex__text{
+    position: relative;
+}
+
+.ex__left p{
+    font-size: 24px;
+}
+.ex__text p{
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    color: #dddddd;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 8px;
+    left: 0px;
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.ex__text img{
+    display: block;
+    width: 100%;
+}
+
+.ex__text hr{
+    margin: 0;
+    height: 5px;
+    background-color: #b31c25;
+    margin-top: 3px;
+}
